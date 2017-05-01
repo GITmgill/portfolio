@@ -43,12 +43,12 @@ var app = angular.module('app', [
   })
   .config(function($mdThemingProvider) {
     $mdThemingProvider.theme('default')
-      .primaryPalette('light-blue', {
-        'default': '600'
+      .primaryPalette('blue-grey', {
+        'default': '900'
       })
-      .accentPalette('blue', {
-        'default': '800'
-      });
+      .accentPalette('deep-orange', {
+        'default': 'A400'
+      })
   })
   .controller("AppCtrl", [ "$scope", function($scope) {
     
