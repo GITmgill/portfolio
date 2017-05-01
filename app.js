@@ -1,14 +1,55 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
+var app = angular.module('app', [
+  'ui.router',
+  'ngMaterial',
+  'navbar',
+  'footer',
+  'home',
+  'about',
+  'work',
+  'lab',
+  'contact'
 ]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
-
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+  config(function($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise('/');
+    $stateProvider
+      .state('home', {
+        url:'/',
+        templateUrl:'pages/home/index.html',
+        controller: 'HomeCtrl'
+      })
+      .state('about', {
+        url:'/about',
+        templateUrl:'pages/about/index.html',
+        controller: 'AboutCtrl'
+      })
+      .state('work', {
+        url:'/work',
+        templateUrl:'pages/work/index.html',
+        controller: 'WorkCtrl'
+      })
+      .state('lab', {
+        url:'/lab',
+        templateUrl:'pages/lab/index.html',
+        controller: 'LabCtrl'
+      })
+      .state('contact', {
+        url:'/contact',
+        templateUrl:'pages/contact/index.html',
+        controller: 'ContactCtrl'
+      });
+  })
+  .config(function($mdThemingProvider) {
+    $mdThemingProvider.theme('default')
+      .primaryPalette('light-blue', {
+        'default': '600'
+      })
+      .accentPalette('blue', {
+        'default': '800'
+      });
+  })
+  .controller("AppCtrl", [ "$scope", function($scope) {
+    
+  }]);
