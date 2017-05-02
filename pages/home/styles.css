@@ -17,6 +17,11 @@
 .expertise, .work {
 	padding:30px 0;
 }
+@media (max-width:625px){
+	.expertise, .work {
+		padding:0;
+	}
+}
 .expertise i {
 	font-size:25px;
 }
