@@ -54,106 +54,17 @@
     			flex="33"
     			flex-xs="100"
     			flex-sm="50"
-    			flex-md="33">
+    			flex-md="33"
+    			ng-repeat="hat in hats">
 	            <md-card md-colors="::{backgroundColor: 'default-primary-500'}">
 	                <md-card-title>
 	                    <md-card-title-text>
-	                        <span class="md-headline">Frontend Development</span>
+	                        <span class="md-headline">{{hat.title}}</span>
 	                    </md-card-title-text>
 	                </md-card-title>
 	                <md-card-content>
 	                    <p>
-	                        Alongside collaborating and building out the frontend of the Governor.io platform. I also had my hand in either building, converting, or maintaining over a hundred sites in the past two years.
-	                    </p>
-	                </md-card-content>
-	            </md-card>
-	        </div>
-	        <div 
-    			flex="33"
-    			flex-xs="100"
-    			flex-sm="50"
-    			flex-md="33">
-	            <md-card md-colors="::{backgroundColor: 'default-primary-500'}">
-	                <md-card-title>
-	                    <md-card-title-text>
-	                        <span class="md-headline">UX/UI Design</span>
-	                    </md-card-title-text>
-	                </md-card-title>
-	                <md-card-content>
-	                    <p>
-	                        I believe good UX can make a good project great, and a great project amazing. For the past two years at Governor I strived to make the experience delightful, useful, and easy.
-	                    </p>
-	                </md-card-content>
-	            </md-card>
-	        </div>
-	        <div 
-    			flex="33"
-    			flex-xs="100"
-    			flex-sm="50"
-    			flex-md="33">
-	            <md-card md-colors="::{backgroundColor: 'default-primary-500'}">
-	                <md-card-title>
-	                    <md-card-title-text>
-	                        <span class="md-headline">Community Management</span>
-	                    </md-card-title-text>
-	                </md-card-title>
-	                <md-card-content>
-	                    <p>
-	                        When the need arose I stepped up to the plate and became the lead community manager for the platform. I answered live chat and email, helping clients problem solve technical issues.
-	                    </p>
-	                </md-card-content>
-	            </md-card>
-	        </div>
-	        <div 
-    			flex="33"
-    			flex-xs="100"
-    			flex-sm="50"
-    			flex-md="33">
-	            <md-card md-colors="::{backgroundColor: 'default-primary-500'}">
-	                <md-card-title>
-	                    <md-card-title-text>
-	                        <span class="md-headline">Documentation</span>
-	                    </md-card-title-text>
-	                </md-card-title>
-	                <md-card-content>
-	                    <p>
-	                        I was responsible for creating, updating, and maintaining the entire documentation platform for Governor. Writing good docs can be challenging but I was grateful for the opportunity and experience.
-	                    </p>
-	                </md-card-content>
-	            </md-card>
-	        </div>
-	        <div 
-    			flex="33"
-    			flex-xs="100"
-    			flex-sm="50"
-    			flex-md="33">
-	            <md-card md-colors="::{backgroundColor: 'default-primary-500'}">
-	                <md-card-title>
-	                    <md-card-title-text>
-	                        <span class="md-headline">Blogs/Tutorials</span>
-	                    </md-card-title-text>
-	                </md-card-title>
-	                <md-card-content>
-	                    <p>
-	                        During my time at Governor I created helpful blogs, tutorials and videos to help customer, client and developers use the platform. For the video tutorials I did all of the voice over, filming and editing.
-	                    </p>
-	                </md-card-content>
-	            </md-card>
-	        </div>
-	        <div 
-    			flex="33"
-    			flex-xs="100"
-    			flex-sm="50"
-    			flex-md="33">
-	            <md-card md-colors="::{backgroundColor: 'default-primary-500'}">
-	                <md-card-title>
-	                    <md-card-title-text>
-	                        <span class="md-headline">Product Design</span>
-	                    </md-card-title-text>
-	                </md-card-title>
-	                <md-card-content>
-	                    <p>
-	                        At Governor I took the lead in designing the templating lanaguage that the platform runs on. We successfully collaborated and created a powerful, easy to use templating langauge.
+	                        {{hat.copy}}
 	                    </p>
 	                </md-card-content>
 	            </md-card>

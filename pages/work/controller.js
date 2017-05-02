@@ -105,4 +105,31 @@ angular.module('work', ['ui.router'])
 				'href': 'dallasarboretum.org'
 			}
 		];
+		$scope.hats = [
+			{
+				'title': 'Frontend Development',
+				'copy': 'Alongside collaborating and building out the frontend of the Governor.io platform. I also had my hand in either building, converting, or maintaining over a hundred sites in the past two years.'
+			},
+			{
+				'title': 'UX/UI Design',
+				'copy': 'I believe good UX can make a good project great, and a great project amazing. For the past two years at Governor I strived to make the experience delightful, useful, and easy.'
+			},
+			{
+				'title': 'Community Management',
+				'copy': 'When the need arose I stepped up to the plate and became the lead community manager for the platform. I answered live chat and email, helping clients problem solve technical issues.'
+			},
+			{
+				'title': 'Documentation',
+				'copy': 'I was responsible for creating, updating, and maintaining the entire documentation platform for Governor. Writing good docs can be challenging but I was grateful for the opportunity and experience.'
+			},
+			{
+				'title': 'Blogs/Tutorials',
+				'copy': 'During my time at Governor I created helpful blogs, tutorials and videos to help customer, client and developers use the platform. For the video tutorials I did all of the voice over, filming and editing.'
+			},
+			{
+				'title': 'Product Design',
+				'copy': 'At Governor I took the lead in designing the templating lanaguage that the platform runs on. We successfully collaborated and created a powerful, easy to use templating langauge.'
+			}
+		];
+
 	}]);
