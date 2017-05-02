@@ -10,6 +10,11 @@ angular.module('sidebar', ['ui.router'])
 	        $mdSidenav('right').close();
 	    };
 	}])
+	.run(function($rootScope, $mdSidenav){
+	  $rootScope.$on('$stateChangeSuccess', function(){
+	    $mdSidenav('right').close();    
+	  });
+	})
 	.directive('sidebar', function() {
 		return {
 			retrict: 'E',

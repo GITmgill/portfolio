@@ -12,11 +12,7 @@ var app = angular.module('app', [
   'lab',
   'contact',
   'sidebar'
-]).run(function($rootScope, $mdSidenav){
-  $rootScope.$on('$stateChangeSuccess', function(){
-    $mdSidenav('right').close();    
-  });
-})
+])
   .config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
     $stateProvider
