@@ -36,13 +36,11 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <div>
-    <navbar></navbar>
-  </div>
-  <div ui-view></div>
+  <div layout-fill layout="column">
+  <navbar></navbar>
+  <md-content ui-view></md-content>
   <sidebar></sidebar>
-  <div>
-    <footer></footer>
+  <footer></footer>
   </div>
 
   <!-- In production use:
