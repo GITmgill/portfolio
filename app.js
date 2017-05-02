@@ -10,7 +10,8 @@ var app = angular.module('app', [
   'about',
   'work',
   'lab',
-  'contact'
+  'contact',
+  'sidebar'
 ]).
   config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');

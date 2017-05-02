@@ -1,13 +1,12 @@
 <md-toolbar class="md-whiteframe-1dp">
-  <div class="md-toolbar-tools" layout>
-    <div flex="10"></div>
-    <a ui-sref="home" class="baloo md-title">MG</a>
-    <span flex></span>
-    <md-button ui-sref="home" name="home">Home</md-button>
-    <md-button ui-sref="about" name="about">About</md-button>
-    <md-button ui-sref="work" name="work">Work</md-button>
-    <md-button ui-sref="lab" name="lab">Lab</md-button>
-    <md-button ui-sref="contact" name="contact">Contact</md-button>
-    <div flex="10"></div>
-  </div>
+    <div 
+        class="md-toolbar-tools">
+        <div flex="10"></div>
+            <a ui-sref="home" class="baloo md-title">MG</a>
+            <div flex></div>
+            <md-button class="md-accent" aria-label="Side Panel" ng-click="openSideNavPanel()">
+                <md-icon md-font-icon="fa fa-bars"></md-icon>
+            </md-button>
+        <div flex="10"></div>
+    </div>
 </md-toolbar>

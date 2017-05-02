@@ -1,0 +1,7 @@
+.md-sidenav-right md-list{
+	margin:0;
+	padding:0;
+}
+.md-sidenav-right md-list-item{
+	font-size:32px;
+}
