@@ -21,7 +21,8 @@
 	layout-padding
 	layout-margin
 	layout-xs="column"
-	layout-sm="column">
+	layout-sm="column"
+	ng-repeat="lab in labs">
 	<div 
 		flex="10"
 		flex-xs="5"
@@ -34,37 +35,28 @@
 				layout
 				layout-align="center center">
 				<div flex="none">
-					<h3 class="md-headline">r.cade</h3>
+					<h3 class="md-headline">{{lab.title}}</h3>
 				</div>
 				<div flex></div>
 				<div flex="none">
-					<md-button target="_blank" href="https://gitmgill.github.io/rcade/#!/" class="md-raised md-accent">Try it</md-button>
+					<md-button target="_blank" href="{{lab.href}}" class="md-raised md-accent">Try it</md-button>
 				</div>
 			</div>
 			<h5>Summary</h5>
 			<md-divider></md-divider>
 			<p>
-				r.cade is an angular app that allows users to transform list style subreddits into beautiful galleries. It's a work in progress but a lot of fun to use.
+				{{lab.summary}}
 			</p>
 			<h5>Purpose</h5>
 			<md-divider></md-divider>
 			<p>
-				Practicing AngularJs and consuming JSON with $http, and making something cool with Reddit in mind. 
+				{{lab.purpose}}
 			</p>
 			<h5>Current Features</h5>
 			<md-list>
-				<md-list-item>
+				<md-list-item ng-repeat="feature in lab.features">
 					<div flex="none">
-						Search for any subreddit
-					</div>
-					<div flex></div>
-					<div flex="none">
-						<md-icon md-colors="::{color: 'accent'}" md-font-icon="fa fa-check"></md-icon>
-					</div>
-				</md-list-item>
-				<md-list-item>
-					<div flex="none">
-						NSFW Filter
+						{{feature}}
 					</div>
 					<div flex></div>
 					<div flex="none">
@@ -74,36 +66,9 @@
 			</md-list>
 			<h5>Roadmap</h5>
 			<md-list>
-				<md-list-item>
+				<md-list-item ng-repeat="roadmap in lab.roadmap">
 					<div flex="none">
-						Native video handling
-					</div>
-					<div flex></div>
-					<div flex="none">
-						<md-icon md-font-icon="fa fa-plus"></md-icon>
-					</div>
-				</md-list-item>
-				<md-list-item>
-					<div flex="none">
-						Native GIF handling
-					</div>
-					<div flex></div>
-					<div flex="none">
-						<md-icon md-font-icon="fa fa-plus"></md-icon>
-					</div>
-				</md-list-item>
-				<md-list-item>
-					<div flex="none">
-						Update styling/branding
-					</div>
-					<div flex></div>
-					<div flex="none">
-						<md-icon md-font-icon="fa fa-plus"></md-icon>
-					</div>
-				</md-list-item>
-				<md-list-item>
-					<div flex="none">
-						Add UI.router for states
+						{{roadmap}}
 					</div>
 					<div flex></div>
 					<div flex="none">
@@ -113,42 +78,15 @@
 			</md-list>
 			<h5>TL:DR</h5>
 			<md-divider></md-divider>
-			<md-chips>
-				<md-chip md-colors="::{backgroundColor: 'primary'}">
-					Lab
-				</md-chip>
-				<md-chip md-colors="::{backgroundColor: 'primary'}">
-					Reddit
-				</md-chip>
-				<md-chip md-colors="::{backgroundColor: 'primary'}">
-					API
-				</md-chip>
-				<md-chip md-colors="::{backgroundColor: 'primary'}">
-					JSON
-				</md-chip>
-				<md-chip md-colors="::{backgroundColor: 'primary'}">
-					Angular
-				</md-chip>
-				<md-chip md-colors="::{backgroundColor: 'primary'}">
-					HTML/CSS
-				</md-chip>
-				<md-chip md-colors="::{backgroundColor: 'primary'}">
-					JavaScript/jQuery
-				</md-chip>
-				<md-chip md-colors="::{backgroundColor: 'primary'}">
-					Opensource
-				</md-chip>
-				<md-chip md-colors="::{backgroundColor: 'primary'}">
-					GIT
-				</md-chip>
+			<md-chips readonly="true" ng-model="lab.tldr">
 			</md-chips>
 		</div>
 		<div 
 			flex="40"
 			flex-xs="100"
 			flex-sm="100">
-			<img flex src="assets/images/rcade4.jpg" width="100%">
-		</div>
+			<img flex src="assets/images/{{lab.img}}" width="100%">
+		</divm >
 	<div 
 		flex="10"
 		flex-xs="5"
