@@ -1,6 +1,24 @@
 .workHats {
 	padding:20px 0 40px;
 }
-.md-chips md-chip {
-	font-size:12px;
+@media (max-width:1330px){
+
+}
+@media (max-width:1160px){
+
+}
+@media (max-width:975px){
+	.md-chips md-chip {
+		font-size:14px;
+	}
+}
+@media (max-width:800px){
+	.md-chips md-chip {
+		font-size:12px;
+	}
+}
+@media (max-width:625px){
+	.md-chips md-chip {
+		font-size:10px;
+	}
 }

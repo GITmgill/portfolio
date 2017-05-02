@@ -60,7 +60,4 @@ md-tooltip .md-content {
 	.lh-zero {
 		line-height:inherit !important;
 	}
-	md-tooltip .md-content {
-		font-size:10px;
-	}
 }
