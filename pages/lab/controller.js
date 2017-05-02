@@ -7,8 +7,8 @@ angular.module('lab', ['ui.router'])
 			{
 				'title': "r.cade",
 				'href': "https://gitmgill.github.io/rcade/#!/",
-				'summary': "r.cade is an angular app that allows users to transform list style subreddits into beautiful galleries. It's a work in progress but a lot of fun to use.",
-				'purpose': "Practicing AngularJs and consuming JSON with $http, and making something cool with Reddit in mind.",
+				'summary': "r.cade is an AngularJS app that allows users to transform list style subreddits into beautiful galleries. It's a work in progresss but a lot of fun to use.",
+				'purpose': "Practicing AngularJS and consuming JSON with $http, and making something cool with Reddit in mind.",
 				'features': [
 					"Search for any subreddit",
 					"NSFW Filter"
