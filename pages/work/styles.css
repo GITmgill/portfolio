@@ -1,3 +1,6 @@
 .workHats {
 	padding:20px 0 40px;
 }
+.md-chips md-chip {
+	font-size:12px;
+}
