@@ -1,0 +1,7 @@
+.me {
+	border-radius:50%;
+	margin-top:-50%;
+	position:relative;
+	z-index:999;
+	transform: rotate(-8deg);
+}
