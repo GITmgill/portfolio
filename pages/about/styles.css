@@ -4,4 +4,22 @@
 	position:relative;
 	z-index:999;
 	transform: rotate(-8deg);
+	width:100%;
+}
+@media (max-width:1330px){
+
+}
+@media (max-width:1160px){
+
+}
+@media (max-width:975px){
+
+}
+@media (max-width:800px){
+
+}
+@media (max-width:625px){
+	.me {
+		display:none;
+	}
 }
