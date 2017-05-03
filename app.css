@@ -21,6 +21,14 @@ a {
 .anton {
 	font-family: 'Anton', sans-serif;
 }
+.logo span {
+	display:none;
+	transition:.2s;
+}
+.logo:hover span {
+	display:inline-block;
+	transition:.2s;
+}
 md-tooltip .md-content {
   height:auto !important;
   font-size:12px;
